@@ -1,0 +1,22 @@
+<svg class="bg">
+    <filter id="grain" color-interpolation-filters="sRGB" primitiveUnits="objectBoundingBox">
+        <!-- generate fine noise-->
+        <feTurbulence type="fractalNoise" baseFrequency=".713" numOctaves="4"></feTurbulence>
+        <!-- use noise as displacement map-->
+        <feDisplacementMap in="SourceGraphic" scale=".1" xChannelSelector="R"></feDisplacementMap>
+        <!-- place filter input underneath to cover transparent edge pixels-->
+        <feBlend in2="SourceGraphic"></feBlend>
+    </filter>
+
+    <linearGradient id="g61">
+        <stop stop-color="#faaf5e"></stop>
+        <stop stop-color="#d63f12" offset=".5"></stop>
+    </linearGradient>
+    <g>
+        <rect width="100%" height="100%" fill="#1e1e1e"></rect>
+        <circle r="30%" fill="url(#g61)"></circle>
+        <circle r="25%" fill="url(#g61)"></circle>
+        <circle r="25%" fill="url(#g61)"></circle>
+        <circle r="25%" fill="url(#g61)"></circle>
+    </g>
+</svg>
