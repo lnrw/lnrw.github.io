@@ -26,7 +26,7 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0;
-  font: 16px "Inter", Arial, sans-serif;
+  font: 17px "Inter", Arial, sans-serif;
   color: white;
 }
 
@@ -192,6 +192,8 @@ body::before {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-wrap: balance;
+  width: 50%;
 }
 
 .hero-img {
@@ -199,7 +201,7 @@ body::before {
 }
 
 .page-heading {
-  font: 40px "Inter", Arial, sans-serif;
+  font: 45px "Inter", Arial, sans-serif;
 }
 
 .bg {
@@ -212,6 +214,12 @@ body::before {
 
 g {
   filter: url(#grain);
+}
+
+@supports (font: -apple-system-body) and (-webkit-appearance: none) {
+  g {
+    filter: blur(24px);
+  }
 }
 
 rect,
