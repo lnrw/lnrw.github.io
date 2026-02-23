@@ -220,11 +220,6 @@ g {
   g {
     display: none;
   }
-  
-  body {
-    background: #ED2526;
-    background: linear-gradient(90deg, rgba(237, 37, 38, 1) 42%, rgba(161, 225, 255, 1) 69%, rgba(62, 175, 183, 1) 100%);
-  }
 }
 
 rect,
@@ -250,5 +245,6 @@ circle {
   cy: 65%;
 
 }
+
 
 
