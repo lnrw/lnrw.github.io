@@ -216,9 +216,9 @@ g {
   filter: url(#grain);
 }
 
-@supports (font: -apple-system-body) and (-webkit-appearance: none) {
-  g {
-    filter: blur(10px);
+@supports (font: -apple-system-body) {
+  body {
+    backdrop-filter: blur(24px);
   }
 }
 
@@ -245,3 +245,4 @@ circle {
   cy: 65%;
 
 }
+
