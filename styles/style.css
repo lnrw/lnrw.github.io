@@ -218,7 +218,7 @@ g {
 
 @supports (font: -apple-system-body) and (-webkit-appearance: none) {
   g {
-    filter: blur(24px);
+    filter: blur(10px);
   }
 }
 
@@ -243,4 +243,5 @@ circle {
 .bg circle {
   cx: 65%;
   cy: 65%;
+
 }
